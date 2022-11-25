@@ -1,3 +1,29 @@
 * {
   margin: 0;
 }
+.page2 {
+  padding: 6rem 6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+}
+.page2 > div:first-of-type {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+.twosections {
+  display: flex;
+  justify-content: space-between;
+}
+.twosections p {
+  border: 1px solid black;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+}
+.twosections :first-child {
+  background-color: blue;
+  color: white;
+  border: 1px solid white;
+}
