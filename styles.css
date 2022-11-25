@@ -20,7 +20,7 @@
   justify-content: space-between;
 }
 .twosections p {
-  border: 1px solid black;
+  border: 2px solid black;
   padding: 0.5rem 1rem;
   border-radius: 20px;
 }
@@ -53,4 +53,28 @@
 [class^="card"] div div img {
   height: 2rem;
   margin-right: 1rem;
+}
+.twopagebuttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.twopagebuttons div {
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+}
+.twopagebuttons > p {
+  padding: 1rem 2rem;
+  border: 2px solid black;
+  border-radius: 20px;
+}
+.twopagebuttons > div p {
+  width: 3rem;
+  border: 2px solid black;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
