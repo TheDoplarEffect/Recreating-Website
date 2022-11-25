@@ -1,0 +1,109 @@
+.page1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(https://images.unsplash.com/photo-1506197603052-3cc9c3a201bd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzh8fHRyYXZlbHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60);
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+}
+
+.web-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 30px;
+  width: 100%;
+}
+
+.web-menu a,
+img,
+button {
+  font-size: 18px;
+  text-decoration: none;
+}
+.web-menu a:hover,
+.web-menu a:visited {
+  color: #1da1f2;
+}
+
+.section-0 {
+  display: flex;
+  flex: 1;
+  gap: 10px;
+}
+
+.section-1 {
+  display: flex;
+  gap: 10px;
+  flex: 2;
+  justify-content: center;
+}
+
+.section-2 {
+  display: flex;
+  gap: 10px;
+  flex: 1;
+  justify-content: end;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-block: 150px;
+}
+.text h1 {
+  font-size: 32px;
+}
+.text p {
+  font-size: 20px;
+  text-align: center;
+  display: flex;
+  width: 38%;
+}
+.button {
+  background-color: white;
+  display: grid;
+  grid-template-columns: 2fr 1px 1fr 1px 1fr 60px;
+  border-radius: 9999px;
+  overflow: hidden;
+  justify-content: space-between;
+}
+.button button {
+  all: unset;
+  height: 100%;
+  aspect-ratio: 1/1;
+  border-radius: 9999px;
+  background-color: blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.button input {
+  border: none;
+  padding-inline: 10px;
+}
+
+.button input::placeholder {
+  color: #aaa;
+}
+
+.button input:focus {
+  outline: none;
+}
+
+.input {
+  padding-block: 20px;
+  padding-inline: 10px;
+  display: flex;
+}
+
+.border {
+  background-color: black;
+  height: 80%;
+  align-self: center;
+}
