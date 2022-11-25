@@ -5,7 +5,7 @@
   grid-template-columns: 1fr 1fr;
   grid-template-rows: repeat(10, 1fr);
   grid-template-areas:
-    ". a"
+    "... a"
     "b a"
     "b c"
     "d c"
@@ -15,5 +15,44 @@
     "h g"
     "h i"
     "j i"
-    "j .";
+    "j ...";
+}
+[class^="articleImages"] {
+  /* height: 100%; */
+  width: 30%vw;
+}
+[class^="articleText"] {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.articleImages1 {
+  grid-area: a;
+}
+.articleImages1 {
+  grid-area: d;
+}
+.articleImages1 {
+  grid-area: e;
+}
+.articleImages1 {
+  grid-area: h;
+}
+.articleImages1 {
+  grid-area: i;
+}
+.articleText1 {
+  grid-area: b;
+}
+.articleText1 {
+  grid-area: c;
+}
+.articleText1 {
+  grid-area: f;
+}
+.articleText1 {
+  grid-area: g;
+}
+.articleText1 {
+  grid-area: j;
 }
