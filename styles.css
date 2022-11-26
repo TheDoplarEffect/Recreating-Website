@@ -158,7 +158,7 @@ section:nth-child(n + 2) p {
   justify-content: space-between;
 }
 .twosections p:nth-child(1) {
-  width: 3rem;
+  width: 4rem;
   aspect-ratio: 1/1;
   border: 1px solid var(--grayText);
   border-radius: 30px;
@@ -167,10 +167,10 @@ section:nth-child(n + 2) p {
   justify-content: center;
 }
 .twosections p:nth-child(n + 2) {
-  width: 8rem;
-  height: 3rem;
+  width: 9rem;
+  height: 4rem;
   border: 1px solid var(--grayText);
-  border-radius: 30px;
+  border-radius: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
