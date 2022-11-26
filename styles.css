@@ -13,6 +13,12 @@ h2,
 h3 {
   font-weight: 800;
 }
+section:nth-child(n + 2) h2 {
+  font-size: 3rem;
+}
+.page2 > div:first-child > p {
+  font-size: 1.5rem;
+}
 
 section:nth-child(n + 2) p {
   color: var(--grayText);
@@ -141,7 +147,6 @@ section:nth-child(n + 2) p {
 /* PAGE TWO */
 /* PAGE TWO */
 .page2 {
-  height: 100vh;
   padding: 6rem 6rem;
   display: flex;
   flex-direction: column;
@@ -244,19 +249,17 @@ a {
   column-gap: 2rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: repeat(10, 1fr);
+  grid-template-rows: repeat(5, 1fr);
   grid-template-areas:
-    "... a"
     "b a"
-    "b c"
     "d c"
-    "d e"
     "f e"
-    "f g"
     "h g"
-    "h i"
-    "j i"
-    "j ...";
+    "j i";
+}
+.page3 p,
+.page3 a {
+  font-size: 1.2rem;
 }
 [class^="articleImages"] {
   width: 100%;
@@ -266,8 +269,8 @@ a {
 [class^="articleText"] {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  gap: 1.5rem;
+  justify-content: space-around;
+  /* gap: 1.5rem; */
 }
 .articleImages1 {
   grid-area: a;
@@ -300,10 +303,10 @@ a {
   grid-area: j;
 }
 .page3 a {
-  background-color: lightskyblue;
+  background-color: var(--accentBlueColor);
   color: white;
   padding: 1rem 2rem;
-  border: 1px solid lightskyblue;
+  border: 1px solid var(--accentBlueColor);
   width: 7rem;
   text-align: center;
   border-radius: 20px;
