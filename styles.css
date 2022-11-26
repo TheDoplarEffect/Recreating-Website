@@ -235,3 +235,76 @@ section:nth-child(n + 2) p {
   background-color: var(--accentBlueColor);
   border: 0px;
 }
+a {
+  text-decoration: none;
+}
+
+.page3 {
+  padding: 3rem 6rem;
+  column-gap: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(10, 1fr);
+  grid-template-areas:
+    "... a"
+    "b a"
+    "b c"
+    "d c"
+    "d e"
+    "f e"
+    "f g"
+    "h g"
+    "h i"
+    "j i"
+    "j ...";
+}
+[class^="articleImages"] {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+[class^="articleText"] {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+.articleImages1 {
+  grid-area: a;
+}
+.articleImages2 {
+  grid-area: d;
+}
+.articleImages3 {
+  grid-area: e;
+}
+.articleImages4 {
+  grid-area: h;
+}
+.articleImages5 {
+  grid-area: i;
+}
+.articleText1 {
+  grid-area: b;
+}
+.articleText2 {
+  grid-area: c;
+}
+.articleText3 {
+  grid-area: f;
+}
+.articleText4 {
+  grid-area: g;
+}
+.articleText5 {
+  grid-area: j;
+}
+.page3 a {
+  background-color: lightskyblue;
+  color: white;
+  padding: 1rem 2rem;
+  border: 1px solid lightskyblue;
+  width: 7rem;
+  text-align: center;
+  border-radius: 20px;
+}
