@@ -1,7 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap");
 * {
   margin: 0;
+  font-family: Inter;
+  font-weight: 400;
 }
 :root {
+  --accentBlueColor: #0e6aa3;
+  --grayText: #939393;
+}
+h1,
+h2,
+h3 {
+  font-weight: 800;
+}
+
+section:nth-child(n + 2) p {
+  color: var(--grayText);
 }
 
 /* PAGE ONE */
@@ -37,7 +51,7 @@
 }
 .web-menu a:hover,
 .web-menu a:visited {
-  color: #1da1f2;
+  color: var(--accentBlueColor);
 }
 
 .section-0 {
@@ -89,7 +103,7 @@
   height: 100%;
   aspect-ratio: 1/1;
   border-radius: 9999px;
-  background-color: blue;
+  background-color: var(--accentBlueColor);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -143,13 +157,26 @@
   display: flex;
   justify-content: space-between;
 }
-.twosections p {
-  border: 2px solid black;
-  padding: 0.5rem 1rem;
-  border-radius: 20px;
+.twosections p:nth-child(1) {
+  width: 3rem;
+  aspect-ratio: 1/1;
+  border: 1px solid var(--grayText);
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.twosections p:nth-child(n + 2) {
+  width: 8rem;
+  height: 3rem;
+  border: 1px solid var(--grayText);
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .twosections :first-child {
-  background-color: blue;
+  background-color: var(--accentBlueColor);
   color: white;
   border: 1px solid white;
 }
@@ -190,20 +217,21 @@
 }
 .twopagebuttons > p {
   padding: 1rem 2rem;
-  border: 2px solid black;
+  border: 1px solid var(--grayText);
   border-radius: 20px;
 }
 .twopagebuttons > div p {
   width: 3rem;
-  border: 2px solid black;
+  border: 1px solid black;
   aspect-ratio: 1/1;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
+  color: black;
 }
 .twopagebuttons > div > :nth-child(3) {
   color: white;
-  background-color: blue;
+  background-color: var(--accentBlueColor);
   border: 0px;
 }
