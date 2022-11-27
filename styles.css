@@ -180,7 +180,7 @@ section:nth-child(n + 2) p {
   align-items: center;
   justify-content: center;
 }
-.twosections :first-child {
+#Blue {
   background-color: var(--accentBlueColor);
   color: white;
   border: 1px solid white;
