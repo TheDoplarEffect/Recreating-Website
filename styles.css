@@ -20,7 +20,7 @@ section:nth-child(n + 2) h2 {
   font-size: 1.5rem;
 }
 
-section:nth-child(n + 2) p {
+section:nth-child(n + 2):nth-child(-n + 4) p {
   color: var(--grayText);
 }
 
@@ -182,16 +182,59 @@ section:nth-child(n + 2) p {
   align-items: center;
   justify-content: center;
 }
-.twosections :first-child {
-  background-color: var(--accentBlueColor);
-  color: white;
-  border: 1px solid white;
-}
 .photogrid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   gap: 4rem;
+}
+.grid-All {
+  grid-template-areas:
+    "All Trending Popular"
+    "Features Recomended Tour";
+}
+.grid-Trending {
+  grid-template-areas:
+    "Features Recomended Tour"
+    "All Trending Popular";
+}
+.grid-Popular {
+  grid-template-areas:
+    "All Recomended Tour"
+    "Features Trending Popular";
+}
+.grid-Features {
+  grid-template-areas:
+    "Features Trending Popular"
+    "All Recomended Tour";
+}
+.grid-Recomended {
+  grid-template-areas:
+    "Tour Trending Features"
+    "Recomended All Popular";
+}
+.grid-Tour {
+  grid-template-areas:
+    "Recomended All Popular"
+    "Tour Trending Features";
+}
+.card1 {
+  grid-area: All;
+}
+.card2 {
+  grid-area: Trending;
+}
+.card3 {
+  grid-area: Popular;
+}
+.card4 {
+  grid-area: Features;
+}
+.card5 {
+  grid-area: Recomended;
+}
+.card6 {
+  grid-area: Tour;
 }
 [class^="card"] {
   display: flex;
@@ -202,6 +245,12 @@ section:nth-child(n + 2) p {
   width: 100%;
   object-fit: cover;
   border-radius: 10px;
+}
+.twosections > .blue,
+.twopagebuttons .blue {
+  background-color: var(--accentBlueColor);
+  color: white !important;
+  border: 1px solid white;
 }
 [class^="card"] div {
   display: flex;
@@ -237,11 +286,11 @@ section:nth-child(n + 2) p {
   justify-content: center;
   color: black;
 }
-.twopagebuttons > div > :nth-child(3) {
+/* .twopagebuttons > div > :nth-child(3) {
   color: white;
   background-color: var(--accentBlueColor);
   border: 0px;
-}
+} */
 a {
   text-decoration: none;
 }
@@ -312,4 +361,36 @@ a {
   width: 7rem;
   text-align: center;
   border-radius: 20px;
+}
+.Footer {
+  padding: 6rem;
+  background-color: var(--accentBlueColor);
+  display: grid;
+  color: white;
+  grid-template-columns: 4fr repeat(3, 1fr);
+  gap: 2rem;
+}
+.Footer img {
+  height: 2rem;
+}
+.Footer > div {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.Footer > div > p {
+  color: white;
+}
+
+.Footer > div > p:first-child {
+  font-weight: 800;
+  font-size: 1.5rem;
+}
+.Titles {
+  display: flex;
+  gap: 2rem;
+}
+.Titles > p {
+  font-size: 2rem;
+  color: white;
 }
