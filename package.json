@@ -1,0 +1,27 @@
+{
+  "name": "interactivity-webshop",
+  "version": "1.0.0",
+  "description": "Hopefully it will work",
+  "main": "code.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheDoplarEffect/Recreating-Website.git"
+  },
+  "author": "William de Vial",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TheDoplarEffect/Recreating-Website/issues"
+  },
+  "homepage": "https://github.com/TheDoplarEffect/Recreating-Website#readme",
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "readline-sync": "^1.4.10",
+    "typescript": "^4.9.3"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.9"
+  }
+}
