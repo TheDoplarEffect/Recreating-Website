@@ -247,7 +247,7 @@ section:nth-child(n + 2):nth-child(-n + 4) p {
 .twosections > .blue,
 .twopagebuttons .blue {
   background-color: var(--accentBlueColor);
-  color: white;
+  color: white !important;
   border: 1px solid white;
 }
 [class^="card"] div {
