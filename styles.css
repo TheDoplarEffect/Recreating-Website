@@ -103,7 +103,9 @@ section:nth-child(n + 2):nth-child(-n + 4) p {
   border-radius: 9999px;
   overflow: hidden;
   justify-content: space-between;
+  box-shadow: 0 0 15px 10px rgba(203, 203, 203, 0.896);
 }
+
 .button button {
   all: unset;
   height: 100%;

@@ -29,7 +29,8 @@
   /* display: flex; */
   /* flex-direction: column; */
   /* align-items: center; */
-  margin-bottom: 50px;
+  margin-bottom: 100px;
+  margin-inline: 20px;
 }
 .costumer {
   display: flex;
@@ -39,7 +40,7 @@
 }
 .avatar-container {
   display: flex;
-  flex: 1;
+  /* flex: 1; */
   align-items: center;
   gap: 10px;
 }
@@ -51,28 +52,33 @@
   background-position: center;
 }
 .costumer-text {
-  /* display: flex;
+  /* display: flex; */
   flex-direction: column;
   align-items: flex-start;
-  justify-content: center; */
+  /* justify-content: center; */
 }
 .star-container {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 3px;
 }
 .star {
   height: 20px;
-  width: 20px;
+  aspect-ratio: 1/1;
   display: inline-block;
 }
 .line {
   width: 100%;
   height: 1px;
-  margin: 10px;
-  background-color: black;
-}
+  margin-block: 10px;
 
+  background-color: var(--grayText);
+}
+.texts p {
+  text-align: center;
+  display: flex;
+  width: 50%;
+}
 .app-download {
   display: flex;
   flex-direction: column;
@@ -89,12 +95,25 @@
 .app-download p:first-of-type {
   font-size: 36px;
   text-align: center;
+  margin-bottom: 15px;
+  margin-top: 10px;
 }
 .app-download p:nth-of-type(2) {
   font-size: 18px;
   text-align: center;
+  margin-bottom: 30px;
 }
 .app {
   font-size: 20px;
   text-align: center;
 }
+
+.app-buttons > button {
+  padding-inline: 20px;
+  padding-block: 10px;
+  border-radius: 99999px;
+  border-style: none;
+  color: white;
+  background-color: black;
+}
+
