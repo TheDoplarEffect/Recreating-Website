@@ -3,10 +3,18 @@
   flex-direction: column;
   padding-block: 20px;
   margin-block: 50px;
+  margin-inline: 200px;
 }
-.main-card {
+.main-card-odd {
   display: flex;
   justify-content: space-around;
+  gap: 150px;
+  margin-bottom: 30px;
+}
+.main-card-even {
+  display: flex;
+  /* justify-content: space-around; */
+  flex-direction: row-reverse;
   gap: 100px;
   margin-bottom: 30px;
 }
@@ -24,9 +32,17 @@ img {
   gap: 20px;
   align-items: start;
   justify-content: space-between;
+  color: rgba(119, 123, 133, 1);
 }
 button {
   padding-inline: 20px;
-  padding-block: 5px;
+  padding-block: 10px;
   border-radius: 99999px;
+  border-style: none;
+  background-color: rgb(29 161 242);
+  color: white;
+}
+p {
+  display: flex;
+  width: 60%;
 }
