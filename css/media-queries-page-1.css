@@ -1,0 +1,78 @@
+@media (max-width: 1200px) {
+  .section-1,
+  .section-2 {
+    display: hidden;
+  }
+}
+@media (max-width: 600px) {
+  .web-menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  /* .section-1,
+  .section-2 {
+    flex-direction: column;
+    margin-left: 100px;
+  } */
+  .section-1 {
+    grid-row: 2;
+    /* grid-column: 1/-1; */
+    flex-direction: column;
+    padding-left: 30px;
+    padding-top: 10px;
+    /* justify-self: center; */
+    /* text-align: center; */
+  }
+  .button {
+    background-color: transparent;
+    box-shadow: none;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0;
+    gap: 5px;
+  }
+  .button > input {
+    padding-block: 8px;
+  }
+  .button > button {
+    aspect-ratio: initial;
+    padding-block: 10px;
+    margin-bottom: 20px;
+  }
+  .border {
+    display: none;
+  }
+  .text {
+    padding-block: 20px;
+    /* display: none; */
+  }
+  .page1 {
+    height: initial;
+  }
+  .title {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .title img {
+    height: 50%;
+    width: 50%;
+  }
+  .main-card-review {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+  .page4 {
+    height: initial;
+  }
+  .app-download {
+    height: initial;
+  }
+  .app-buttons > button {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+}
