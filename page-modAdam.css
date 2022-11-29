@@ -1,0 +1,9 @@
+@media (max-width: 900px) {
+  .Footer {
+    grid-template-columns: 1fr;
+  }
+  .Footer {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}

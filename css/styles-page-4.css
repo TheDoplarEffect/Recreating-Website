@@ -1,0 +1,119 @@
+.page4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.title img {
+  height: 10%;
+  width: 10%;
+}
+.title img:nth-of-type(2) {
+  transform: rotate(180deg);
+}
+/* .title img :focus {
+  outline: none;
+} */
+.title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-inline: 200px;
+  margin-bottom: 50px;
+}
+.main-card-review {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding-inline: 200px;
+}
+.card-costumer-review {
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* align-items: center; */
+  margin-bottom: 100px;
+  margin-inline: 20px;
+}
+.costumer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* margin-block: 10px; */
+}
+.avatar-container {
+  display: flex;
+  /* flex: 1; */
+  align-items: center;
+  gap: 10px;
+}
+.avatar {
+  height: 100%;
+  aspect-ratio: 1/1;
+  border-radius: 99999px;
+  display: inline-block;
+  background-position: center;
+}
+.costumer-text {
+  /* display: flex; */
+  flex-direction: column;
+  align-items: flex-start;
+  /* justify-content: center; */
+}
+.star-container {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+.star {
+  height: 20px;
+  aspect-ratio: 1/1;
+  display: inline-block;
+}
+.line {
+  width: 100%;
+  height: 1px;
+  margin-block: 10px;
+
+  background-color: var(--grayText);
+}
+.texts p {
+  text-align: center;
+  display: flex;
+  width: 50%;
+}
+.app-download {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-block: 10px;
+  width: 75%;
+  height: 30vh;
+  background-position: top;
+  background-size: cover;
+  margin-bottom: 100px;
+  background-image: url(https://wallpaperaccess.com/full/1399026.jpg);
+}
+.app-download p:first-of-type {
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 15px;
+  margin-top: 10px;
+}
+.app-download p:nth-of-type(2) {
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.app {
+  font-size: 20px;
+  text-align: center;
+}
+
+.app-buttons > button {
+  padding-inline: 20px;
+  padding-block: 10px;
+  border-radius: 99999px;
+  border-style: none;
+  color: white;
+  background-color: black;
+}
+
